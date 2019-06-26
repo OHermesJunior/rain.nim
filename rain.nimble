@@ -11,4 +11,4 @@ bin           = @["rain"]
 
 # Dependencies
 
-requires "nim >= 0.20.9"
+requires "nim >= 0.20.0"
