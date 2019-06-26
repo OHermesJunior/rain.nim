@@ -40,7 +40,7 @@ proc fall(drops: var seq[Drop], winWidth, winHeight: int) =
   stdout.flushFile()
 
 proc exit() {.noconv.} =
-  setCursorPos(0, 0)
+  setCursorPos(0, terminalHeight())
   eraseLine()
   showCursor()
   quit 0
