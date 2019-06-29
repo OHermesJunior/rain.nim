@@ -26,9 +26,8 @@ proc show(drop: Drop) =
 proc clearScreen(winWidth, winHeight: int) =
   setCursorPos(0,0)
   for h in 1..winHeight:
-    for w in 1..winWidth:
-      stdout.write(" ")
-  stdout.flushFile()
+    eraseLine()
+    cursorDown()
 
 proc fall(drops: var seq[Drop], winWidth, winHeight: int) =
   clearScreen(winWidth, winHeight)
